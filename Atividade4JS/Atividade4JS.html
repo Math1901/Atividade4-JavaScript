@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <h1>Atividade 4 (Aula 1)</h1>
+    <button onclick="botCirculo()">Circulo</button>
+    <div>
+    
+    <button onclick="botQuadrado()">Quadrado</button>
+    <div>
+
+    <button onclick="botTriangulo()">Triângulo</button>
+    <div>
+
+    <button onclick="botTrapezio()">Trapézio</button>
+    <div>
+
+    <script>
+        function botCirculo(){
+            const raio = prompt("Informe o valor do raio do circulo");
+            const pi = 3.14;
+            const area1 = (pi * (raio * raio));
+            window.alert(`O valor da área do circulo é: ${area1}`);
+        }
+        function botQuadrado(){
+            const lado = prompt("Informe o valor do lado do quadrado");
+            let area2 = (lado * lado);
+            window.alert(`O valor da área do quadrado é: ${area2}`);
+        }
+        function botTriangulo(){
+            const base = prompt("Informe o valor da base do Triângulo");
+            const altura = prompt("Informe o valor da altura do Triângulo");
+            const area3 = ((base * altura) / 2); 
+            window.alert(`O valor da área do Triângulo é: ${area3}`);
+        }
+        function botTrapezio(){
+            const baseMaior = prompt("Informe o valor da base maior do Trapézio");
+            const baseMenor = prompt("Informe o valor da base menor do Trapézio");
+            const altura = prompt("Informe o valor da altura do Trapézio");
+            const area4 = ((parseInt(baseMaior) + parseInt(baseMenor)) * altura / 2); 
+            window.alert(`O valor da área do Trapézio é: ${area4}`);
+        }
+    </script>   
+</body>
+</html>
